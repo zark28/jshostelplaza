@@ -1,0 +1,24 @@
+.dashboard-sidebar {
+  position: relative;
+  color: #fafafb;
+}
+.dashboard-sidebar::before {
+  width: 0%;
+  position: absolute;
+}
+
+.active-sidebar.dashboard-sidebar::before {
+  width: 35%;
+
+  top: 0;
+  left: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 900px) {
+  .active-sidebar.dashboard-sidebar::before {
+    width: 100%;
+
+    border-radius: 0 50% 0 50%;
+  }
+}

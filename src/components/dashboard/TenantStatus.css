@@ -1,0 +1,11 @@
+.book-status {
+  animation: rotateFull 5s infinite linear;
+}
+@keyframes rotateFull {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

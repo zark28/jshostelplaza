@@ -1,0 +1,17 @@
+@media screen and (max-width: 480px) {
+  .hero-section-1 {
+    background-image: url('/public/images/banner-img1.png');
+    background-position: center;
+    background-size: cover;
+    background-color: #0071386f;
+    background-blend-mode: darken;
+    color: #f5f5f5;
+  }
+}
+
+.herobg {
+  background-image: url('../../assets/protruding-squares.svg');
+  background-position: center;
+  /* background-size: contain; */
+  background-repeat: repeat;
+}
