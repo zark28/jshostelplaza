@@ -53,7 +53,7 @@ const useManageUser = ({ endpoint = 'data', body }) => {
   const postRequest = useCallback(
     (nextpage) => {
       axios
-        .post(`http://localhost:4000/${endpoint}`, body)
+        .post(`https://api-jshostel.onrender.com/${endpoint}`, body)
         .then((res) => {
           alert(res.statusText)
           return res.data;
@@ -83,7 +83,7 @@ const useManageUser = ({ endpoint = 'data', body }) => {
 // Get all data from api
   const getResources = useCallback(() => {
     axios
-      .get(`http://localhost:4000/${endpoint}`)
+      .get(`https://api-jshostel.onrender.com/${endpoint}`)
       .then((res) => {
         return res.data;
       })
@@ -99,7 +99,7 @@ const useManageUser = ({ endpoint = 'data', body }) => {
   // upadate information
   const updateResources = useCallback(()=>{
     axios
-      .patch(`http://localhost:4000/${endpoint}`, { ...body })
+      .patch(`https://api-jshostel.onrender.com/${endpoint}`, { ...body })
       .then((res) => {
           //  console.log(res);
           alert(res.statusText)
@@ -113,7 +113,7 @@ const useManageUser = ({ endpoint = 'data', body }) => {
   // delete data
   const removeResource=useCallback(()=>{
     axios
-    .delete(`http://localhost:4000/${endpoint}`)
+    .delete(`https://api-jshostel.onrender.com/${endpoint}`)
     .then((res)=> {
        alert(res.statusText)
        return res})
