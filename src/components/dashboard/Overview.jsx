@@ -14,7 +14,7 @@ const Overview = ({role=null}) => {
   },[])
  
   
-    console.log(responseData);
+    // console.log(responseData);
     let allTenants =responseData.tenants?.length
     let bookedTenants = responseData.tenants?.filter((tenant)=>tenant.status === true)
     let pendingTenants = responseData.tenants?.filter((tenant)=>tenant.status === false)

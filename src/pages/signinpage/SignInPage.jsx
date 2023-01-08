@@ -11,7 +11,7 @@ const SignInPage = ({ role = null }) => {
 
   const handleShowPassword = (e) => {
     e.preventDefault();
-    console.log();
+    // console.log();
     inputType === 'text' ? setInputType('password') : setInputType('text');
   };
   const handleUserInput = (e) => {
@@ -27,7 +27,7 @@ const SignInPage = ({ role = null }) => {
   const handleSignIn = (e) => {
     e.preventDefault();
     if (userInfo.email && userInfo.password) {
-      console.log(userInfo);
+      // console.log(userInfo);
       postRequest();
       // handleSignInNavigation(responseData);
       // setUserInfo(userInitialValues);

@@ -28,12 +28,12 @@ const useManageUser = ({ endpoint = 'data', body }) => {
   );
   const handleSignInNavigation = useCallback(
     ( userData ,endpoint) => {
-      console.log(userData);
+      // console.log(userData);
      
       if (endpoint === 'auth/login') {
         
         if (userData.token) {
-          console.log(userData.user);
+          // console.log(userData.user);
           localStorage.setItem("token",userData.token)
           localStorage.setItem("user",JSON.stringify(userData.user))
           setIsLogedIn({...isLogedIn,admin:true});
